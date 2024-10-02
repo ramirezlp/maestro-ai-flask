@@ -33,7 +33,7 @@ def process_maestro(transaction_id, objective, webhook_url):
         }
         response = requests.post(webhook_url, params={
             "transaction_id": transaction_id
-        }, verify=False)
+        })
         response.raise_for_status()
         tasks[transaction_id] = {"status": "completed", "webhook_response": response.status_code, "data": results}
     except Exception as e:
