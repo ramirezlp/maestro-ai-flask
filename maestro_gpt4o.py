@@ -13,8 +13,8 @@ openai_client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 anthropic_client = Anthropic(api_key=os.getenv('ANTHROPIC_API_KEY'))
 
 # Available OpenAI models
-ORCHESTRATOR_MODEL = "gpt-4o"
-SUB_AGENT_MODEL = "gpt-4o"
+ORCHESTRATOR_MODEL = "gpt-3.5-turbo"
+SUB_AGENT_MODEL = "gpt-3.5-turbo"
 
 # Available Claude models for Anthropic API
 REFINER_MODEL = "claude-3-opus-20240229"
